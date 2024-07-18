@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--Link Source CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Link Source agar hasil dapat didownload dalam bentuk PDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!--Mencoba responsiv-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--Title utama-->
+    <header class="header-class"> 
+      <h1 >Website Kalkulator BMI</h2>
+    </header>
+
+    <main class="main-class">
+      <!--Konten kiri-->
+
+      <section class="section-class">
+      <section class="left-class">
+      
+      <h2 class="main-title">Kalkulator BMI</h2>
+      <section>
+        <article class="artikel-one">Berat badan adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk hitung sekarang di kalkulator BMI</article>
+       
+        <!--Input Data-->
+        <section>
+            <form class="form-class">
+              <!--Input Gender-->
+              <div class="gender-selection">
+                <div class="jenis-class">Jenis kelamin</div>
+                <div class="gender-options">
+                  <div class="gender-choice">
+                    <input type="radio" name="sex" id="sex-man" value="man"> 
+                    <label for="sex-man">Laki-laki</label>
+                  </div>
+                  <div class="gender-choice">
+                    <input type="radio" name="sex" id="sex-woman" value="woman"> 
+                    <label for="sex-woman">Perempuan</label>
+                  </div>
+                </div>
+              </div>
+              <!--Input Berat badan-->
+              <div class="input-group">
+                <label for="weight-selection">Berat badan (KG)</label>
+                <input type="number" id="weight-selection">
+              </div>
+              <!--Input Umur-->
+              <div class="input-group">
+                <label for="age-input">Usia (th)</label>
+                <input type="number" id="age-input">
+              </div>
+              <!--Input Tinggi badan-->
+              <div class="input-group">
+                <label for="height-input">Tinggi Badan (CM)</label>
+                <input type="number" id="height-input">
+              </div>
+              <!--Input Button submit & reset-->
+            <div class="button">
+                <button id="hitung BMI" class="submit-class">Hitung BMI</button>
+                <button class="reset-class">Reset</button>
+            </div>
+
+            </form>
+        </section>
+      </section>
+        <!--Fitur-fitur-->
+        <section class="fitur-class">
+
+        <!--title fitur-->
+        <header>
+          <h2>Keunggulan fitur</h2>
+        </header>
+
+        <!--article isi fitur-->
+        <article>
+          <p>
+          1. Menghitung berat badan
+          <br>
+          2. Menentukan kategori berat badan ideal atau tidak
+          <br>
+          3. Mempersiapkan program penurunan berat badan
+          <br>
+          <br>
+          Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+        <br>
+        <br>
+      Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Index masa tubuh (atau BMI) dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI = KG/M²</p>
+        
+        
+        </article>
+
+        </section>
+        </section>
+        </section>
+
+        <!--Konten kanan-->
+        <section class="right-class">
+        <!--Result artikel-->
+        <article class="hasil-class">
+            <header>
+                <h2>Hasil</h2>
+            </header>
+        
+        <form class="form-hasil">
+        <section id="bmi-explanation">
+        </section>
+
+        <!--Result section-->
+        <section id="result-content"></section>
+        <div>
+          <button class="download-class">Download  Hasil BMI</button>
+        </div>
+        </form>
+        <div id="dynamic-message"></div>
+        <!--Button Konsultasi & Registrasi ahli gizi-->
+        <div class="container1_class">
+          <button class="hasil-button">Konsultasi Ahli Gizi Via Aplikasi</button>
+          <button class="hasil-button2">Registrasi Online Ahli Gizi</button>
+        </div>
+        <!--Pesan-->
+        <article class="message-class">BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran anda terkait berat badan anda</article>
+
+        <section class="bmi-result-container">
+          <div id="bmi-message" class="bmi-message"></div>
+          <!--Button Konsultasi & Registrasi via aplikasi online-->
+          <div class="container2-class">
+          <button class="konsultasi-class">Konsultasi Dokter Via Aplikasi</button>
+          <button class="Registrasi-class">Registrasi Online Sekarang</button>
+          </div>
+        </section>
+
+        <!--Title Download-->
+        <h4 class="download-aplikasi">Download Aplikasi</h4>
+        <!--Button Download playstore & IOS-->
+        <div class="download-buttons">
+          <div>
+            <!--Link google Play store-->
+          <a href="https://play.google.com/apps" target="_blank">
+          <img class="google-play-image" src="css/play-store.png" alt="Google Play Store">
+          </a>
+          </div>
+          <div>
+            <!--Link apple IOS-->
+          <a href="https://www.apple.com/app-store/" target="_blank">
+          <img class="ios-image" src="css/ios.png" alt="iOS App Store">
+          </a>
+        </div>
+        </div>
+        </section>
+         </article>
+    </main>
+    <!--Link script source javascript-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
