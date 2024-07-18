@@ -1,18 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("DOM fully loaded");
     
-    // Percabangan Mencari tombol submit
     const submitButton = document.querySelector('.submit-class');
     if (submitButton) {
-        console.log("Submit button found"); 
+        console.log("Submit button found");
         submitButton.addEventListener('click', function(e) {
             console.log("Submit button clicked");
-            e.preventDefault(); // Mencegah perilaku default form
-            hitungBMI(); // Memanggil fungsi untuk menghitung BMI
+            e.preventDefault();
+            showLoading();
+            setTimeout(() => {
+                hideLoading();
+                hitungBMI();
+            }, 600);
         });
     } else {
         console.error("Submit button not found");
     }
+
 
     const resetButton = document.querySelector('.reset-class');
     if (resetButton) {
@@ -27,6 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function showLoading() {
+    document.getElementById('loading').style.display = 'flex';
+}
+
+function hideLoading() {
+    document.getElementById('loading').style.display = 'none';
+}
 //fungsi untuk menghitung BMI
 function hitungBMI() {
     console.log("hitungBMI function called");
