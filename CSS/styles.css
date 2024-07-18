@@ -54,7 +54,7 @@ body {
 }
 
 .left-class {
-  background: url('image.jpg');
+  background: url('CSS/image.jpg');
   background-size: cover;
   background-position: center;
   width: 80%;
@@ -196,7 +196,7 @@ body {
 }
 
 .right-class {
-  background: url('kanan.jpg');
+  background: url('CSS/kanan.jpg');
   background-size: cover;
   display: none;
   min-height: 823px;
