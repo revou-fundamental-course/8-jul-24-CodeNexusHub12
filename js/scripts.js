@@ -157,7 +157,7 @@ if (bmiMessage) {
     // Ubah gambar latar belakang konten kiri
     const leftClass = document.querySelector('.left-class');
     if (leftClass) {
-        leftClass.style.backgroundImage = "url('css/kiri.jpg')";
+        leftClass.style.backgroundImage = "url('CSS/kiri.jpg')";
         console.log("Left class background image changed");
     } else {
         console.error("Left class element not found");
@@ -167,7 +167,7 @@ if (bmiMessage) {
     const rightClass = document.querySelector('.right-class');
     if (rightClass) {
         rightClass.style.display = 'block';
-        rightClass.style.backgroundImage = "url('css/kanan.jpg')";
+        rightClass.style.backgroundImage = "url('CSS/kanan.jpg')";
 
         // menyesuaikan lebar container utama
         const sectionClass = document.querySelector('.section-class');
@@ -196,7 +196,7 @@ function resetForm() {
     // Mereset gambar latar belakang konten kiri ke gambar awal
     const leftClass = document.querySelector('.left-class');
     if (leftClass) {
-        leftClass.style.backgroundImage = "url('css/image.jpg')";
+        leftClass.style.backgroundImage = "url('CSS/image.jpg')";
         console.log("Left class background image reset");
     }
 
